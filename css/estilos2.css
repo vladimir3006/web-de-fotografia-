@@ -13,7 +13,7 @@ body {
 	width: 900px;
 	margin: 0 auto;
 	
-	/*Animación slidein*/
+/* INICIO Animación slidein*/
 	-webkit-animation-name: slidein; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     animation-name: slidein;
@@ -22,7 +22,7 @@ body {
 
 }
 
-/* INICIO Animación slidein*/
+/*Animación slidein*/
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes slidein {
     0%   {margin-top: 150%;}
@@ -73,73 +73,42 @@ header nav a {
 	text-shadow: 1px 1px #02010a;
 }
 
-img {
-	box-shadow: 2px 2px #02010a;
-}
 
-.img_principal {
-	background-color: #82c3a6;
-	padding: 25px;
-
-}
-
- .img_principal img {
-	margin: auto;
-	display: block;
-	max-width: 75%; 
-
-}
-
-.img_secundaria {
-	text-align: center;
+	
+.galeria {
+	margin: 0 auto;
+	width: 100%;
 	background-color: #d5c75f;
-	border: 1px solid;
-	display: -webkit-flex;
-    display: flex;
-    webkit-justify-content: center;
-    justify-content: center;
-   
-}
-.img_secundaria .foto1 img {
-	margin: auto;
-	max-width: 90%;
-	height: auto;
-	-webkit-transition: rotate 2s;  /* Safari */
-    transition: rotate 2s;
-    transition: box-shadow 1s;
-    transition-timing-function: ease-in-out;
-	-webkit-transition-timing-function: ease-in-out;
-    
+	overflow: hidden;
+	position: relative;
 	
 }
 
-.img_secundaria .foto1 img:hover{
-	-webkit-transform: rotate(10deg); /* Safari */
-    transform: rotate(10deg);
-    box-shadow: 2px 2px #82c3a6;
-    
-}
 
-.img_secundaria .foto2 img {
-	margin: auto;
-	max-width: 90%;
+.fotos img{
+	margin: 15px;
+	padding: 0px;	
+	max-width: 30%;
 	height: auto;
-	transition: translate 2s;
-    transition: box-shadow 1s;
-    transition-timing-function: ease-in-out;
-	-webkit-transition-timing-function: ease-in-out;
+	float: left; 
+	box-shadow: 2px 2px #02010a;
 }
 
-.img_secundaria .foto2 img:hover{
-	-webkit-transform: translate(20px, -5px);/* Safari */
-     transform: translate(20px, -5px);
-    box-shadow: 2px 2px #82c3a6;
+#foto1 {
+    -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+    filter: blur(10px);
 }
 
-.img_secundaria  h2 {
-	text-align: center;
-	font-size: 1.2em;
-} 
+#foto2, #foto4, #foto6 {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#foto3 {
+    -webkit-filter: sepia(90%); /* Safari 6.0 - 9.0 */
+    filter: sepia(90%);
+}
+
 
 footer {
 	background-color: #C6d5c5;
@@ -154,7 +123,6 @@ footer {
     width: 210px;
     margin.top: 5px;
     color: black;
-
 }
 
 
@@ -180,23 +148,29 @@ footer {
 	}
 	header{
 		text-align: center;
-		margin: 0 auto;
+		margin: auto;
 	}
 	header h1, header nav {
 		width:100%;
-		margin: 0 auto;
+		margin: auto;
 		text-align: center;
 		line-height:50px;
 	}
-
-	.img_secundaria {
+	
+	.galeria {
+		width: 100%;
+		margin: 0 auto;
 		display: inline-block;
-		text-align: center;
+		
 	}
-	.img_secundaria .foto1 img, .img_secundaria .foto2 img {
-		max-width: 80%;
+
+	.fotos img{
+		margin: 15px auto;
+		display: block;
+		max-width: 75%;
+		float: none;
 	}
-	 
+	
 }
 
 /*  movil */
