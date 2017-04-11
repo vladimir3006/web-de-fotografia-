@@ -14,8 +14,8 @@ body {
 	margin: 0 auto;
 	
 /* INICIO Animación slidein*/
-	-webkit-animation-name: slidein; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: slidein; /* Safari  */
+    -webkit-animation-duration: 1s; /* Safari  */
     animation-name: slidein;
     animation-duration: 1s;
 }
@@ -23,14 +23,14 @@ body {
 }
 
 /*Animación slidein*/
-/* Safari 4.0 - 8.0 */
+/* Safari  */
 @-webkit-keyframes slidein {
     0%   {margin-top: 150%;}
     60%  {margin-top: -5%;}
     100% {margin-top: 0%}
  }
 
-/* Standard syntax */
+
 @-webkit-keyframes slidein {
     0%   {margin-top: 150%;}
     60%  {margin-top: -5%;}
@@ -48,14 +48,16 @@ header {
 }
 
  header h1 {
- 	margin: 10px;
+ 	margin-top: 10px;
+ 	margin-left: 50px;
  	text-shadow: 2px 2px #02010a;
  	float: left;
  }
 
 header nav {
 	float:right;
-	margin: 10px;
+	margin-top: 10px;
+ 	margin-right: 50px;
 }
 
 header nav a {
@@ -73,8 +75,7 @@ header nav a {
 	text-shadow: 1px 1px #02010a;
 }
 
-
-	
+/* Inicio galeria*/	
 .galeria {
 	margin: 0 auto;
 	width: 100%;
@@ -93,22 +94,23 @@ header nav a {
 	float: left; 
 	box-shadow: 2px 2px #02010a;
 }
-
+	 /*filtros*/
 #foto1 {
-    -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+    -webkit-filter: blur(10px); /* Safari */
     filter: blur(10px);
 }
 
 #foto2, #foto4, #foto6 {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%); /* Safari  */
     filter: grayscale(100%);
 }
 
 #foto3 {
-    -webkit-filter: sepia(90%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: sepia(90%); /* Safari */
     filter: sepia(90%);
 }
-
+	/*filtros*/
+/* final galeria*/
 
 footer {
 	background-color: #C6d5c5;
@@ -150,11 +152,15 @@ footer {
 		text-align: center;
 		margin: auto;
 	}
-	header h1, header nav {
+	header h1{
 		width:100%;
 		margin: auto;
 		text-align: center;
 		line-height:50px;
+	}
+
+	header nav {
+		margin-right: 50px;
 	}
 	
 	.galeria {

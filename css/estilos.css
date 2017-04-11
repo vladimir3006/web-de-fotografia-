@@ -14,8 +14,8 @@ body {
 	margin: 0 auto;
 	
 	/*Animación slidein*/
-	-webkit-animation-name: slidein; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-name: slidein; /* Safari */
+    -webkit-animation-duration: 1s; /* Safari  */
     animation-name: slidein;
     animation-duration: 1s;
 }
@@ -23,14 +23,13 @@ body {
 }
 
 /* INICIO Animación slidein*/
-/* Safari 4.0 - 8.0 */
+/* Safari  */
 @-webkit-keyframes slidein {
     0%   {margin-top: 150%;}
     60%  {margin-top: -5%;}
     100% {margin-top: 0%}
  }
 
-/* Standard syntax */
 @-webkit-keyframes slidein {
     0%   {margin-top: 150%;}
     60%  {margin-top: -5%;}
@@ -48,14 +47,16 @@ header {
 }
 
  header h1 {
- 	margin: 10px;
+ 	margin-top: 10px;
+ 	margin-left: 50px;
  	text-shadow: 2px 2px #02010a;
  	float: left;
  }
 
 header nav {
 	float:right;
-	margin: 10px;
+	margin-top: 10px;
+	margin-right: 50px;
 }
 
 header nav a {
@@ -77,6 +78,7 @@ img {
 	box-shadow: 2px 2px #02010a;
 }
 
+/* Inicio galeria*/
 .img_principal {
 	background-color: #82c3a6;
 	padding: 25px;
@@ -108,16 +110,13 @@ img {
     transition: rotate 2s;
     transition: box-shadow 1s;
     transition-timing-function: ease-in-out;
-	-webkit-transition-timing-function: ease-in-out;
-    
-	
+	-webkit-transition-timing-function: ease-in-out;  
 }
 
 .img_secundaria .foto1 img:hover{
 	-webkit-transform: rotate(10deg); /* Safari */
     transform: rotate(10deg);
     box-shadow: 2px 2px #82c3a6;
-    
 }
 
 .img_secundaria .foto2 img {
@@ -141,6 +140,20 @@ img {
 	font-size: 1.2em;
 } 
 
+ a{
+	font-size: 1em;
+	color: black;
+	text-decoration: none;
+}
+
+ a:hover{
+	text-decoration: underline;
+	color: white;
+	text-shadow: 1px 1px #02010a;;
+}
+
+/* final galeria*/
+
 footer {
 	background-color: #C6d5c5;
 	border-radius: 0 0 10px 10px;
@@ -152,9 +165,8 @@ footer {
 .flotante {
 	display: inline-block;
     width: 210px;
-    margin.top: 5px;
+    margin-top: 5px;
     color: black;
-
 }
 
 
@@ -182,11 +194,15 @@ footer {
 		text-align: center;
 		margin: 0 auto;
 	}
-	header h1, header nav {
+	header h1  {
 		width:100%;
 		margin: 0 auto;
 		text-align: center;
 		line-height:50px;
+	}
+
+	header nav {
+		margin-right: 50px;
 	}
 
 	.img_secundaria {
